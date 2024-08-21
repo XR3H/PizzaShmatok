@@ -1,0 +1,13 @@
+{% extends "pizza_deliverybase.html" %}
+{% load static %}
+
+{% block title %}Pizza Menu{% endblock %}
+
+{% block content %}
+<h1>Pizza Menu</h1>
+<ul>
+    {% for pizza in pizzas %}
+    <li>{{ pizza.name }} - ${{ pizza.price }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
