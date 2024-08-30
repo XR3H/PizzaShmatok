@@ -1,4 +1,3 @@
-Here's a stylish and informative `README.md` for your Django business project:
 
 ---
 
