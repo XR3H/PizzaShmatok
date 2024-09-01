@@ -26,7 +26,6 @@ urlpatterns = [
     path('register/', register_view, name='register'),
     path('', views.index, name='index'),
     path('about-us/', views.about_us, name='about-us'),
-    path('typography/', views.typography, name='typography'),
     path('contacts/', views.contacts, name='contacts'),
     path('menu/', views.menu, name='menu'),
     path('create_order/', views.create_order, name='create_order'),

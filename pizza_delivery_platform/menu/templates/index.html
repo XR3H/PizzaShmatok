@@ -54,23 +54,94 @@
   <div class="container">
     <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Our Menu</span></h3>
     <div class="row row-md row-30">
-      <!-- Повторите этот блок для каждой категории меню -->
       <div class="col-sm-6 col-lg-4">
         <div class="oh-desktop">
           <!-- Services Terri-->
           <article class="services-terri wow slideInUp">
-            <div class="services-terri-figure"><img src="{% static 'images/menu-1-370x278.jpg' %}" alt="" width="370" height="278"/>
+            <div class="services-terri-figure">
+              <img src="{% static 'images/menu-1-370x278.jpg' %}" alt="Salads" width="370" height="278"/>
             </div>
-            <div class="services-terri-caption"><span class="services-terri-icon linearicons-leaf"></span>
+            <div class="services-terri-caption">
+              <span class="services-terri-icon linearicons-leaf"></span>
               <h5 class="services-terri-title"><a href="{% url 'menu' %}">Salads</a></h5>
             </div>
           </article>
         </div>
       </div>
-      <!-- Конец блока категории меню -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="oh-desktop">
+          <!-- Services Terri-->
+          <article class="services-terri wow slideInDown">
+            <div class="services-terri-figure">
+              <img src="{% static 'images/menu-2-370x278.jpg' %}" alt="Pizzas" width="370" height="278"/>
+            </div>
+            <div class="services-terri-caption">
+              <span class="services-terri-icon linearicons-pizza"></span>
+              <h5 class="services-terri-title"><a href="{% url 'menu' %}">Pizzas</a></h5>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="oh-desktop">
+          <!-- Services Terri-->
+          <article class="services-terri wow slideInUp">
+            <div class="services-terri-figure">
+              <img src="{% static 'images/menu-3-370x278.jpg' %}" alt="Burgers" width="370" height="278"/>
+            </div>
+            <div class="services-terri-caption">
+              <span class="services-terri-icon linearicons-hamburger"></span>
+              <h5 class="services-terri-title"><a href="{% url 'menu' %}">Burgers</a></h5>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="oh-desktop">
+          <!-- Services Terri-->
+          <article class="services-terri wow slideInDown">
+            <div class="services-terri-figure">
+              <img src="{% static 'images/menu-4-370x278.jpg' %}" alt="Desserts" width="370" height="278"/>
+            </div>
+            <div class="services-terri-caption">
+              <span class="services-terri-icon linearicons-ice-cream"></span>
+              <h5 class="services-terri-title"><a href="{% url 'menu' %}">Desserts</a></h5>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="oh-desktop">
+          <!-- Services Terri-->
+          <article class="services-terri wow slideInUp">
+            <div class="services-terri-figure">
+              <img src="{% static 'images/menu-5-370x278.jpg' %}" alt="Drinks" width="370" height="278"/>
+            </div>
+            <div class="services-terri-caption">
+              <span class="services-terri-icon linearicons-coffee-cup"></span>
+              <h5 class="services-terri-title"><a href="{% url 'menu' %}">Drinks</a></h5>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="oh-desktop">
+          <!-- Services Terri-->
+          <article class="services-terri wow slideInDown">
+            <div class="services-terri-figure">
+              <img src="{% static 'images/menu-6-370x278.jpg' %}" alt="Seafood" width="370" height="278"/>
+            </div>
+            <div class="services-terri-caption">
+              <span class="services-terri-icon linearicons-steak"></span>
+              <h5 class="services-terri-title"><a href="{% url 'menu' %}">Seafood</a></h5>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- Section CTA-->
 <section class="primary-overlay section parallax-container" data-parallax-img="{% static 'images/bg-3.jpg' %}">
@@ -94,28 +165,105 @@
   <div class="container">
     <h3 class="oh-desktop"><span class="d-inline-block wow slideInUp">Selected Pizzas</span></h3>
     <div class="row row-lg row-30">
-      <!-- Повторите этот блок для каждой пиццы -->
       <div class="col-sm-6 col-lg-4 col-xl-3">
         <!-- Product-->
         <article class="product wow fadeInLeft" data-wow-delay=".15s">
-          <div class="product-figure"><img src="{% static 'images/product-1-161x162.png' %}" alt="" width="161" height="162"/>
+          <div class="product-figure">
+            <img src="{% static 'images/product-1-161x162.png' %}" alt="Margherita Pizza" width="161" height="162"/>
           </div>
-          <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star text-gray-13"></span>
+          <div class="product-rating">
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star text-gray-13"></span>
           </div>
           <h6 class="product-title">Margherita Pizza</h6>
           <div class="product-price-wrap">
             <div class="product-price">$24.00</div>
           </div>
           <div class="product-button">
-            <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="#">Add to cart</a></div>
-            <div class="button-wrap"><a class="button button-xs button-secondary button-winona" href="#">View Product</a></div>
+            <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="{% url 'menu' %}">Add to cart</a></div>
+            <div class="button-wrap"><a class="button button-xs button-secondary button-winona" href="{% url 'menu' %}">View Product</a></div>
           </div>
         </article>
       </div>
-      <!-- Конец блока пиццы -->
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <!-- Product-->
+        <article class="product wow fadeInLeft" data-wow-delay=".1s">
+          <div class="product-figure">
+            <img src="{% static 'images/product-2-161x162.png' %}" alt="Mushroom Pizza" width="161" height="162"/>
+          </div>
+          <div class="product-rating">
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+          </div>
+          <h6 class="product-title">Mushroom Pizza</h6>
+          <div class="product-price-wrap">
+            <div class="product-price">$24.00</div>
+          </div>
+          <div class="product-button">
+            <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="{% url 'menu' %}">Add to cart</a></div>
+            <div class="button-wrap"><a class="button button-xs button-secondary button-winona" href="{% url 'menu' %}">View Product</a></div>
+          </div>
+          <span class="product-badge product-badge-new">New</span>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <!-- Product-->
+        <article class="product wow fadeInLeft" data-wow-delay=".05s">
+          <div class="product-figure">
+            <img src="{% static 'images/product-3-161x162.png' %}" alt="Hawaiian Pizza" width="161" height="162"/>
+          </div>
+          <div class="product-rating">
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star text-gray-13"></span>
+          </div>
+          <h6 class="product-title">Hawaiian Pizza</h6>
+          <div class="product-price-wrap">
+            <div class="product-price">$24.00</div>
+          </div>
+          <div class="product-button">
+            <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="{% url 'menu' %}">Add to cart</a></div>
+            <div class="button-wrap"><a class="button button-xs button-secondary button-winona" href="{% url 'menu' %}">View Product</a></div>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <!-- Product-->
+        <article class="product wow fadeInLeft">
+          <div class="product-figure">
+            <img src="{% static 'images/product-4-161x162.png' %}" alt="Pesto Pizza" width="161" height="162"/>
+          </div>
+          <div class="product-rating">
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+            <span class="mdi mdi-star"></span>
+          </div>
+          <h6 class="product-title">Pesto Pizza</h6>
+          <div class="product-price-wrap">
+            <div class="product-price product-price-old">$40.00</div>
+            <div class="product-price">$24.00</div>
+          </div>
+          <div class="product-button">
+            <div class="button-wrap"><a class="button button-xs button-primary button-winona" href="{% url 'menu' %}">Add to cart</a></div>
+            <div class="button-wrap"><a class="button button-xs button-secondary button-winona" href="{% url 'menu' %}">View Product</a></div>
+          </div>
+          <span class="product-badge product-badge-sale">Sale</span>
+        </article>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- Section CTA-->
 <section class="primary-overlay section parallax-container" data-parallax-img="{% static 'images/bg-4.jpg' %}">
@@ -141,48 +289,71 @@
   <div class="container container-style-1">
     <div class="owl-carousel owl-style-12" data-items="1" data-sm-items="2" data-lg-items="3" data-margin="30" data-xl-margin="45" data-autoplay="true" data-nav="true" data-center="true" data-smart-speed="400">
       <!-- Quote Tara-->
-      <!-- Повторите этот блок для каждого отзыва -->
       <article class="quote-tara">
         <div class="quote-tara-caption">
           <div class="quote-tara-text">
-            <p class="q"> [Текст отзыва] </p>
+            <p class="q">PizzaHouse is the longest lasting pizza place in the city and is well run and staffed. Prices are great and allow me to keep coming back.</p>
           </div>
-          <div class="quote-tara-figure"><img src="{% static 'images/user-6-115x115.jpg' %}" alt="" width="115" height="115"/>
+          <div class="quote-tara-figure">
+            <img src="{% static 'images/user-6-115x115.jpg' %}" alt="" width="115" height="115"/>
           </div>
         </div>
-        <h6 class="quote-tara-author"> [Имя автора] </h6>
+        <h6 class="quote-tara-author">Ashley Fitzgerald</h6>
         <div class="quote-tara-status">Client</div>
       </article>
-      <!-- Конец блока отзыва -->
+      <!-- Quote Tara-->
+      <article class="quote-tara">
+        <div class="quote-tara-caption">
+          <div class="quote-tara-text">
+            <p class="q">I am a real pizza addict, and even when I’m home I prefer your pizzas to all others. They taste awesome and are very affordable.</p>
+          </div>
+          <div class="quote-tara-figure">
+            <img src="{% static 'images/user-8-115x115.jpg' %}" alt="" width="115" height="115"/>
+          </div>
+        </div>
+        <h6 class="quote-tara-author">Stephanie Williams</h6>
+        <div class="quote-tara-status">Client</div>
+      </article>
+      <!-- Quote Tara-->
+      <article class="quote-tara">
+        <div class="quote-tara-caption">
+          <div class="quote-tara-text">
+            <p class="q">PizzaHouse has amazing pizza. Not only do you get served with a great attitude, you also get delicious pizza at a great price!</p>
+          </div>
+          <div class="quote-tara-figure">
+            <img src="{% static 'images/user-7-115x115.jpg' %}" alt="" width="115" height="115"/>
+          </div>
+        </div>
+        <h6 class="quote-tara-author">Bill Johnson</h6>
+        <div class="quote-tara-status">Client</div>
+      </article>
+      <!-- Quote Tara-->
+      <article class="quote-tara">
+        <div class="quote-tara-caption">
+          <div class="quote-tara-text">
+            <p class="q">PizzaHouse has great pizza. Not only do you get served with a great attitude and delivered delicious pizza, you get a great price.</p>
+          </div>
+          <div class="quote-tara-figure">
+            <img src="{% static 'images/user-9-115x115.jpg' %}" alt="" width="115" height="115"/>
+          </div>
+        </div>
+        <h6 class="quote-tara-author">Aaron Wilson</h6>
+        <div class="quote-tara-status">Client</div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="section section-last bg-default">
-  <div class="container-fluid container-inset-0 isotope-wrap">
-    <div class="row row-10 gutters-10 isotope" data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group">
-      <!-- Повторите этот блок для каждого изображения в галерее -->
-      <div class="col-xs-6 col-sm-4 col-xl-2 isotope-item oh-desktop">
-        <!-- Thumbnail Mary-->
-        <article class="thumbnail thumbnail-mary thumbnail-mary-2 wow slideInLeft"><a class="thumbnail-mary-figure" href="{% static 'images/gallery-1-1200x800-original.jpg' %}" data-lightgallery="item"><img src="{% static 'images/gallery-1-310x585.jpg' %}" alt="" width="310" height="585"/></a>
-          <div class="thumbnail-mary-caption">
-            <div>
-              <h6 class="thumbnail-mary-title"><a href="#"> [Заголовок] </a></h6>
-              <div class="thumbnail-mary-location"> [Описание] </div>
-            </div>
-          </div>
-        </article>
-      </div>
-      <!-- Конец блока изображения -->
-    </div>
-  </div>
-</section>
+
+
+
+
 
 <!-- Tell-->
 <section class="section section-sm section-first bg-default">
   <div class="container">
     <h3 class="heading-3">Book your Table</h3>
-    <form class="rd-form rd-mailform form-style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="{% url 'book_table' %}"> 
+    {% comment %} <form class="rd-form rd-mailform form-style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="{% url 'book_table' %}">  {% endcomment %}
     {% csrf_token %}
       <div class="row row-20 gutters-20">
         <div class="col-md-6 col-lg-4 oh-desktop">
